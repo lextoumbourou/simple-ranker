@@ -4,7 +4,6 @@ import datetime
 import pandas as pd
 
 from simple_ranker import Ranker
-from tests import stock_data
 
 class RankerTest(unittest.TestCase):
     def setUp(self):
