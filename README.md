@@ -35,7 +35,7 @@ Now, what if we wanted to rank them by both roe and pe. We'd do this:
 
 ```
 >>> roe_rank = {'name': 'roe'}
->>> pe_rank = {'name': 'pe'}
+>>> pe_rank = {'name': 'pe', 'ascending': True}
 >>> r = Ranker(df, [roe_rank, pe_rank])
 >>> print r.process()
            code  pe   roe  total_rank
@@ -45,6 +45,8 @@ Now, what if we wanted to rank them by both roe and pe. We'd do this:
 
 [3 rows x 4 columns]
 ```
+
+Note that we add the ```ascending``` key to the ```pe_rank``` dict in order to rank from lowest to highest (descending is default).
 
 Perhaps, I have timeseries data that spanned more than one year, I could choose to average the data over a timeframe before ranking:
 
