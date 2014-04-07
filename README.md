@@ -52,7 +52,7 @@ Perhaps, I have timeseries data that spanned more than one year, I could choose 
 
 ```
 >>> roe_rank = {'name': 'roe', 'average': 3}
->>> pe_rank = {'name': 'pe'}
+>>> pe_rank = {'name': 'pe', 'ascending': True}
 >>> r = Ranker(df, [roe_rank, pe_rank])
 >>> print r.process()
 ```
@@ -61,7 +61,7 @@ Or I could filter out certain values by adding a max and min key to the rank dic
 
 ```
 >>> roe_rank = {'name': 'roe', 'average': 3, 'max': 0.70}
->>> pe_rank = {'name': 'pe', 'min': 5}
+>>> pe_rank = {'name': 'pe', 'ascending': True, 'min': 5}
 >>> r = Ranker(df, [roe_rank, pe_rank])
 >>> print r.process()
 ```
