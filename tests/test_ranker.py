@@ -5,6 +5,7 @@ import pandas as pd
 
 from simple_ranker import Ranker
 
+
 class RankerTest(unittest.TestCase):
     def setUp(self):
         self.current_year = datetime.datetime.now().year
@@ -79,12 +80,10 @@ class RankerTest(unittest.TestCase):
             'ascending': True
         }
 
-        
         data = pd.DataFrame({
-                'code': ['ANZ', 'CBA', 'NAB', 'WST'],
-                'pe': [3, 4, 5, 6],
-                'roe': [0.30, 0.50, 0.80, 0.70]
-            },
+            'code': ['ANZ', 'CBA', 'NAB', 'WST'],
+            'pe': [3, 4, 5, 6],
+            'roe': [0.30, 0.50, 0.80, 0.70]},
             index=pd.to_datetime(
                 [datetime.date(self.current_year, 6, 20)] * 4
             ), dtype=float
@@ -95,7 +94,7 @@ class RankerTest(unittest.TestCase):
 
         # Output should look like this:
         # code  pe_rank  roe_rank  total_rank
-        # ANZ    1         4        5       
+        # ANZ    1         4        5
         # CBA    2         3        5
         # NAB    3         1        4  -- first pick
         # WST    4         2        6  -- last pick
@@ -111,7 +110,8 @@ class RankerTest(unittest.TestCase):
         }
 
         # Push last 3 years into a list
-        date_array = [datetime.date(self.current_year - i, 6, 20) for i in range(3)]
+        date_array = [
+            datetime.date(self.current_year - i, 6, 20) for i in range(3)]
 
         data = pd.DataFrame({
             'code': ['ANZ'] * 3 + ['CBA'] * 3 + ['NAB'] * 3,

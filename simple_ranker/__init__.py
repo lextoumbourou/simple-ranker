@@ -1,1 +1,1 @@
-from Ranker import *
+from Ranker import Ranker
