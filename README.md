@@ -48,7 +48,7 @@ Now, what if we wanted to rank them by both roe and pe. We'd do this:
 
 Note that we add the ```ascending``` key to the ```pe_rank``` dict in order to rank from lowest to highest (descending is default).
 
-Perhaps, I have timeseries data that spanned more than one year, I could choose to average the data over a timeframe before ranking:
+Perhaps, I have timeseries data that spanned more than one year. I could choose to average the data over a timeframe before ranking:
 
 ```
 >>> roe_rank = {'name': 'roe', 'average': 3}
