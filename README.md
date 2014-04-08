@@ -74,6 +74,24 @@ The ranking algorithm is extremely straight-forward:
 2. Take the second column and rank.
 3. Create a total rank by adding the ranks from the first column to the second column.
 
+## Tests
+
+Firstly, ensure the ```dev-requirements``` are installed (probably best to put it in a virtualenv):
+
+```
+> virtualenv env
+> . env/bin/activate
+(env)> pip install -r dev-requirements.txt
+```
+
+Run tests via [nose](https://pypi.python.org/pypi/nose), like so:
+
+```
+(env)> nosetests
+```
+
+Nose is configured to integrate with [coverage](https://pypi.python.org/pypi/coverage) (on the 100% test coverage tip).
+
 ## License
 
 [MIT](./LICENSE)
