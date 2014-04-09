@@ -1,6 +1,13 @@
 # simple-ranker
 
-simple-ranker is an extremely simple ranking module for pandas DataFrames. It is based on the algorithm from The Little Book That Beats the Market, and it's the backbone behind [MagicRanker](http://www.magicranker.com).
+[![Build Status](https://travis-ci.org/lextoumbourou/simple-ranker.svg?branch=master)](https://travis-ci.org/lextoumbourou/simple-ranker)
+
+*An extremely simple, multi-value ranking module for [pandas](http://pandas.pydata.org) DataFrames.*
+
+
+Based on the algorithm from The Little Book That Beats the Market, and the backbone behind [MagicRanker](http://www.magicranker.com).
+
+
 
 ## Usage
 
