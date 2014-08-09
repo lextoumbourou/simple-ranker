@@ -8,7 +8,7 @@ reqs = [str(pr.req) for pr in parsed_reqs]
 
 setup(
     name='simple-ranker',
-    version='1.0.1',
+    version='1.0.2',
     author='Lex Toumbourou',
     author_email='lextoumbourou@gmail.com',
     description='An extremely simple, multi-value ranking module for pandas DataFrames',

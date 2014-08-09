@@ -1,6 +1,10 @@
 # simple-ranker
 
 [![Build Status](https://travis-ci.org/lextoumbourou/simple-ranker.svg?branch=master)](https://travis-ci.org/lextoumbourou/simple-ranker)
+[![Coverage Status](https://coveralls.io/repos/lextoumbourou/simple-ranker/badge.png)](https://coveralls.io/r/lextoumbourou/simple-ranker)
+[![License](https://pypip.in/license/simple-ranker/badge.png)](https://pypi.python.org/pypi/simple-ranker)
+[![Latest Version](https://pypip.in/version/simple-ranker/badge.png)](https://pypi.python.org/pypi/simple-ranker)
+[![Downloads](https://pypip.in/download/simple-ranker/badge.png)](https://pypi.python.org/pypi/simple-ranker)
 
 *An extremely simple, multi-value ranking module for [pandas](http://pandas.pydata.org) DataFrames.*
 
