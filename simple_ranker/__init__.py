@@ -1,1 +1,1 @@
-from Ranker import Ranker
+from ranker import Ranker
