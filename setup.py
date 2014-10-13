@@ -11,7 +11,8 @@ setup(
     version='1.0.2',
     author='Lex Toumbourou',
     author_email='lextoumbourou@gmail.com',
-    description='An extremely simple, multi-value ranking module for pandas DataFrames',
+    description=(
+        'An extremely simple, multi-value ranking module for pandas DataFrames'),
     license='MIT',
     classifiers=[
         'Intended Audience :: Developers',

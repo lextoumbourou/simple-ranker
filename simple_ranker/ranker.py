@@ -1,10 +1,10 @@
 from datetime import datetime
 
 
-class Ranker():
-    def __init__(self, data, rank_methods=[], filter_methods=[], limit=50):
-        self.rank_methods = rank_methods
-        self.filter_methods = filter_methods
+class Ranker(object):
+    def __init__(self, data, rank_methods=None, filter_methods=None, limit=50):
+        self.rank_methods = rank_methods if rank_methods else []
+        self.filter_methods = filter_methods if filter_methods else []
 
         self.data = data
         self.limit = limit
@@ -26,7 +26,7 @@ class Ranker():
         today = datetime.today()
         self._prefilter_data()
 
-        ## Just get this years data
+        # Just get this years data
         this_years_data = self.data[str(today.year)]
 
         # Create an empty rank table filled with zeros

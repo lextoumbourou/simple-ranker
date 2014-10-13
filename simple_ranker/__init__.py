@@ -1,1 +1,1 @@
-from ranker import Ranker
+from ranker import Ranker  # noqa
